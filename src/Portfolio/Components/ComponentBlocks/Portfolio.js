@@ -126,6 +126,7 @@ const Portfolio = (props) => {
               href={websiteDetails?.Website?.Link}
               target="_blank"
               className="linkColor"
+              rel="noreferrer"
             >
               {websiteDetails?.Website?.Name}
             </a>
@@ -218,6 +219,7 @@ const Portfolio = (props) => {
                       href={PortfolioData["Personal-Details"]["Website-Link"]}
                       target="_blank"
                       className="linkColor"
+                      rel="noreferrer"
                     >
                       {PortfolioData["Personal-Details"]["Website-Name"]}
                     </a>

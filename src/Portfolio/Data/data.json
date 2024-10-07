@@ -1,0 +1,111 @@
+{
+    "Portfolio": {
+        "Personal-Details": {
+            "Name": "Karthik D",
+            "Img": "./Profile/myprofile.jpg",
+            "Role": "Systems Engineer",
+            "Designation": "(Front-End / React Developer)",
+            "Mobile-No": "+91 9742534213 / +91 9742390046",
+            "Address": "Electronic City, Bangalore",
+            "Gmail": "devalekarthik9@gmail.com",
+            "LinkedIn-Name": "Karthik D@linkedin.com",
+            "LinkedIn-Link": "https://www.linkedin.com/in/karthik-d-192285190",
+            "WebsiteTitle":"Website",
+            "Website-Name": "Explore",
+            "Website-Link": "https://explore-bykd.netlify.app/"
+        },
+        "Career Objective": [
+            "I am a passionate Front-End React Developer with around 3 years of experience in the IT industry. I am proficient in HTML, CSS, JavaScript, Bootstrap, MUI, and Responsive Web Design (RWD), with a strong foundation in cutting-edge technologies like React.js. I am looking for a challenging position to leverage my skills in creating interactive and user-friendly websites. I am committed to keeping up with modern web technologies and trends to deliver innovative solutions that meet client needs."
+        ],
+        "Skills": [
+            "React-JS",
+            "Javascript + ES6",
+            "JSON",
+            "HTML",
+            "CSS & SCSS/SASS",
+            "Bootstrap",
+            "MUI (Material UI)",
+            "RWD (Responsive Web Design)",
+            "Client-Side Validation",
+            "Testing: Unit Testing, Jest, React Testing Library",
+            "Tools Used: Visual Studio Code, Git & GitHub, Jira, BitBucket"
+        ],
+        "Experience": {
+            "Company": "Infosys",
+            "Years": "3 Years",
+            "Desc": [
+                "Currently, I am a UI Developer at Infosys Ltd in Bangalore, where I have been working since March 2022.",
+                "In my current role as a React Developer (UI Developer), I am part of a team of 10 developers working on a fully user-friendly website. This site is completely responsive, ensuring accessibility across desktop, tablet, and mobile devices, with proper design alignment tailored to the user’s viewing platform."
+            ]
+        },
+        "Projects": [
+            {
+                "Website": {
+                    "Title": "Project 1",
+                    "Name": "Verisk"
+                },
+                "Website-Desc": {
+                    "Desc-Title": "Description",
+                    "Desc": [
+                        "Developed: Built responsive web pages and applications optimized for all devices.",
+                        "Collaborated: Worked with team members on new frameworks, feature development, and code reviews.",
+                        "Optimized: Prioritized time management, responsive design, and code optimization for performance.",
+                        "UI/UX: Partnered with designers to turn mockups into interactive, accessible interfaces.",
+                        "Integrated: Implemented React libraries like React Select and React Accordion for enhanced functionality.",
+                        "Dynamic Coding: Integrated API data using JSON for dynamic content.",
+                        "Debugging: Resolved cross-browser issues to ensure platform consistency."
+                    ]
+                }
+            },
+            {
+                "Website": {
+                    "Title": "Project 2",
+                    "Name": "One America"
+                },
+                "Website-Desc": {
+                    "Desc-Title": "Description",
+                    "Desc": [
+                        "Developed: Optimized web pages for desktop, tablet, and mobile devices.",
+                        "Collaborated: Worked with team members to implement functionality using React libraries and frameworks.",
+                        "Focused on Design: Utilized CSS, SCSS, Bootstrap, and responsive web design (RWD) principles.",
+                        "Optimized: Ensured browser compatibility and enhanced performance for better user experience.",
+                        "Code Reviews: Participated in reviews to uphold high coding standards and best practices."
+                    ]
+                }
+            }
+        ],
+        "Website": {
+            "Website": {
+                "Title": "Website",
+                "Name": "EXPLORE",
+                "Link": "https://explore-bykd.netlify.app/"
+            },
+            "Website-Desc": {
+                "Desc-Title": "Description",
+                "Desc": [
+                    "This website is a travel platform where users can book their favorite destinations and nearby hotels.",
+                    "It is user-friendly and fully responsive, allowing access from desktop, tablet, and mobile devices, with design alignment tailored to the user's view.",
+                    "The site incorporates client-side validation for enhanced user experience.",
+                    "It features dynamic coding, utilizing data in JSON format for seamless interactions.",
+                    "I have focused on the DRC (Don't Repeat Code) process, reusable components, and code optimization to enhance reusability and reduce the overall size of the website."
+                ]
+            }
+        },
+        "Languages": [
+            "English",
+            "Kannada",
+            "Hindi",
+            "Telugu",
+            "Marathi"
+        ],
+        "Education": {
+            "College": "MS Ramaiah Institute Of Technology",
+            "CGPA": "8.23",
+            "Location": "Bangalore"
+        },
+        "Certification": [
+            "Infosys Certified Front End Web Developer",
+            "Infosys Certified React Associate"
+        ]
+    }
+}

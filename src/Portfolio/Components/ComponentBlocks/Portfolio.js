@@ -199,6 +199,7 @@ const Portfolio = (props) => {
               <img
                 src={PortfolioData["Personal-Details"].Img}
                 className="portfolio-img"
+                alt=""
               />
             </div>
             <div className="portfolio-texts">

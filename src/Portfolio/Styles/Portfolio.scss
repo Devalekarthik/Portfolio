@@ -438,7 +438,8 @@
                 .css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded:last-of-type,
                 .css-1elwnq4-MuiPaper-root-MuiAccordion-root:last-of-type,
                 .css-1wz20g3.Mui-expanded:last-of-type,
-                .css-1wz20g3.Mui-expanded:first-of-type {
+                .css-1wz20g3.Mui-expanded:first-of-type,
+                .css-1086bdv-MuiPaper-root-MuiAccordion-root {
                     border-radius: 2.5rem;
 
                     &:hover {
@@ -448,6 +449,7 @@
 
                 .css-1c35hjw-MuiPaper-root-MuiAccordion-root:last-of-type,
                 .css-1c35hjw-MuiPaper-root-MuiAccordion-root:first-of-type,
+                .css-1086bdv-MuiPaper-root-MuiAccordion-root,
                 .css-1wz20g3:last-of-type,
                 .css-1wz20g3:first-of-type {
                     border-radius: 2.5rem;
@@ -458,6 +460,7 @@
                 }
 
                 .css-o4b71y-MuiAccordionSummary-content,
+                .css-eqpfi5-MuiAccordionSummary-content, .Mui-expanded,
                 .css-17o5nyn {
                     justify-content: center;
 
@@ -467,6 +470,7 @@
                 }
 
                 .css-o4b71y-MuiAccordionSummary-content.Mui-expanded,
+                .css-eqpfi5-MuiAccordionSummary-content.Mui-expanded,
                 .css-17o5nyn.Mui-expanded {
                     margin: 0;
                 }

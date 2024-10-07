@@ -122,7 +122,11 @@ const Portfolio = (props) => {
         <div className="portfolio-projectDetails">
           <h3>
             {websiteDetails?.Website?.Title}:{" "}
-            <a href={websiteDetails?.Website?.Link} target="_blank">
+            <a
+              href={websiteDetails?.Website?.Link}
+              target="_blank"
+              className="linkColor"
+            >
               {websiteDetails?.Website?.Name}
             </a>
           </h3>
@@ -213,6 +217,7 @@ const Portfolio = (props) => {
                     <a
                       href={PortfolioData["Personal-Details"]["Website-Link"]}
                       target="_blank"
+                      className="linkColor"
                     >
                       {PortfolioData["Personal-Details"]["Website-Name"]}
                     </a>

@@ -73,7 +73,7 @@ const Portfolio = (props) => {
       return (
         <div className="portfolio-skillsDetails">
           {[...Array(SkillDetails.length)].map((item, index) => (
-            <div>{SkillDetails[index]}</div>
+            <div key={index}>{SkillDetails[index]}</div>
           ))}
         </div>
       );
@@ -85,8 +85,8 @@ const Portfolio = (props) => {
           <h2>
             {experienceDetails.Company} : {experienceDetails.Years}
           </h2>
-          {experienceDetails?.Desc?.map((item) => (
-            <div>{item}</div>
+          {experienceDetails?.Desc?.map((item, index) => (
+            <div key={index}>{item}</div>
           ))}
         </div>
       );
@@ -97,7 +97,7 @@ const Portfolio = (props) => {
         <div className="portfolio-educationDetails">
           {[...Array(Object.keys(educationDetails).length)].map(
             (item, index) => (
-              <li>
+              <li key={index}>
                 {Object.keys(educationDetails)[index]} :{" "}
                 {Object.values(educationDetails)[index]}
               </li>
@@ -111,7 +111,7 @@ const Portfolio = (props) => {
       return (
         <div className="portfolio-languageDetails">
           {[...Array(languageDetails.length)].map((item, index) => (
-            <div>{languageDetails[index]}</div>
+            <div key={index}>{languageDetails[index]}</div>
           ))}
         </div>
       );
@@ -132,8 +132,8 @@ const Portfolio = (props) => {
             </a>
           </h3>
           <h4>{websiteDetails?.["Website-Desc"]?.["Desc-Title"]} :</h4>
-          {websiteDetails?.["Website-Desc"]?.Desc?.map((item) => (
-            <li>{item}</li>
+          {websiteDetails?.["Website-Desc"]?.Desc?.map((item, index) => (
+            <li key={index}>{item}</li>
           ))}
         </div>
       );
@@ -143,7 +143,7 @@ const Portfolio = (props) => {
       return (
         <div className="portfolio-certificateDetails">
           {[...Array(certificateDetails.length)].map((item, index) => (
-            <li>{certificateDetails[index]}</li>
+            <li key={index}>{certificateDetails[index]}</li>
           ))}
         </div>
       );
@@ -157,8 +157,8 @@ const Portfolio = (props) => {
               {data?.Website?.Title}: {data?.Website?.Name}
             </h3>
             <h4>{data?.["Website-Desc"]?.["Desc-Title"]} :</h4>
-            {data?.["Website-Desc"]?.Desc?.map((item) => (
-              <li>{item}</li>
+            {data?.["Website-Desc"]?.Desc?.map((item, index) => (
+              <li key={index}>{item}</li>
             ))}
           </>
         );
@@ -199,7 +199,6 @@ const Portfolio = (props) => {
               <img
                 src={PortfolioData["Personal-Details"].Img}
                 className="portfolio-img"
-                alt="Error loading Image"
               />
             </div>
             <div className="portfolio-texts">

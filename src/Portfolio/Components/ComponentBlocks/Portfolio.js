@@ -72,22 +72,53 @@ const Portfolio = (props) => {
     const Skills = (SkillDetails) => {
       return (
         <div className="portfolio-skillsDetails">
-          {[...Array(SkillDetails.length)].map((item, index) => (
-            <div key={index}>{SkillDetails[index]}</div>
-          ))}
+          {typeof SkillDetails === 'object' && !Array.isArray(SkillDetails) ? (
+            Object.entries(SkillDetails).map(([category, skills], index) => (
+              <div key={index} className="skill-category">
+                <h4>{category}</h4>
+                <div className="skill-tags">
+                  {Array.isArray(skills) ? skills.map((skill, skillIndex) => (
+                    <span key={skillIndex} className="skill-tag">{skill}</span>
+                  )) : <span className="skill-tag">{skills}</span>}
+                </div>
+              </div>
+            ))
+          ) : Array.isArray(SkillDetails) ? (
+            SkillDetails.map((item, index) => (
+              <div key={index}>{item}</div>
+            ))
+          ) : (
+            <div>{SkillDetails}</div>
+          )}
         </div>
       );
     };
 
     const Experience = (experienceDetails) => {
+      const calculateExperience = (startDate) => {
+        const start = new Date(startDate);
+        const now = new Date();
+        const diffTime = Math.abs(now - start);
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        const years = (diffDays / 365.25).toFixed(1);
+        return `${years} Years`;
+      };
+
+      const years = experienceDetails?.StartDate 
+        ? calculateExperience(experienceDetails.StartDate)
+        : experienceDetails?.Years || '';
+
       return (
-        <div className="portfolio-experienceDetails">
-          <h2>
-            {experienceDetails.Company} : {experienceDetails.Years}
-          </h2>
-          {experienceDetails?.Desc?.map((item, index) => (
-            <div key={index}>{item}</div>
-          ))}
+        <div className="portfolio-experienceDetails experience-card">
+          <div className="experience-header">
+            <h3 className="experience-company">{experienceDetails?.Company}</h3>
+            <span className="experience-years">{years}</span>
+          </div>
+          <div className="experience-body">
+            {experienceDetails?.Desc?.map((item, index) => (
+              <p key={index}>{item}</p>
+            ))}
+          </div>
         </div>
       );
     };
